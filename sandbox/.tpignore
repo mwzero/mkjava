@@ -1,0 +1,11 @@
+#Directory and file to exclude
+/target/.*
+/target/
+/.settings/.*
+/.settings/
+/.classpath
+/.project
+/castlibs/.*
+/castlibs/
+\Q/btm1.tlog\E
+\Q/btm2.tlog\E
