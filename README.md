@@ -4,5 +4,5 @@ The mkjava github archive contains a part of the Java code used by the tutorials
 
 The other Java code part is extracted directly from real projects such as:
 
-. listfeeds.com
-. questasera.it
+- listfeeds.com
+- questasera.it
