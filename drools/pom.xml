@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>sandbox</artifactId>
+	<artifactId>drools</artifactId>
 
 	<parent>
 		<artifactId>mkjava-pom</artifactId>
@@ -13,46 +13,11 @@
 	<packaging>jar</packaging>
 
 	<properties>
-		<jaeger.version>0.26.0</jaeger.version>
 		<slf4j.version>1.7.5</slf4j.version>
-		<guava.version>23.0</guava.version>
-		<dropwizard.version>1.1.4</dropwizard.version>
-		<okhttp.version>3.9.0</okhttp.version>
-		<logback.version>1.2.1</logback.version>
-
+		<drools.version>6.5.0.Final</drools.version>
 	</properties>
 
 	<dependencies>
-
-		<!-- jaeger START -->
-		<!-- https://mvnrepository.com/artifact/com.uber.jaeger/jaeger-core -->
-		<dependency>
-			<groupId>com.uber.jaeger</groupId>
-			<artifactId>jaeger-core</artifactId>
-			<version>0.20.0</version>
-		</dependency>
-
-
-		<!-- jaeger END -->
-
-		<dependency>
-			<groupId>io.opentracing.contrib</groupId>
-			<artifactId>opentracing-jdbc</artifactId>
-			<version>0.0.7</version>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.17</version>
-			<scope>runtime</scope>
-		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -101,8 +66,33 @@
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-compiler</artifactId>
+			<scope>runtime</scope>  
+			<version>${drools.version}</version>
+		</dependency>
 
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-core</artifactId>  
+			<version>${drools.version}</version>
+		</dependency>
 
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-decisiontables</artifactId>  
+			<version>${drools.version}</version>
+		</dependency>
+		
+	    <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-templates</artifactId> 
+            <type>jar</type> 
+            <scope>test</scope>
+            <version>${drools.version}</version>
+        </dependency>
 
 	</dependencies>
 

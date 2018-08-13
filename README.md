@@ -17,3 +17,8 @@ The other Java code part is extracted directly from real projects such as:
 
 Generally, this repository is used as a "sandbox" to try new code, libraries, and framework before to adopt in real projects.
 
+The POM contains the following modules:
+
+- drools: how to use drools including features such as loading external rules files, using drools rule template, etc..
+- sandbox: a container for spare parts such as logs, tracer, etc..
+

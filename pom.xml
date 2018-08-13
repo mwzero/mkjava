@@ -43,7 +43,7 @@
 		<commons-collections.version>3.2.1</commons-collections.version>
 		<commons-codec.version>1.9</commons-codec.version>
 		<commons-dbcp.version>1.4</commons-dbcp.version>
-		<commons-io.version>2.4</commons-io.version>
+		<commons-io.version>2.6</commons-io.version>
 		<commons-lang.version>2.6</commons-lang.version>
 		<commons-pool.version>1.5.6</commons-pool.version>
 
@@ -88,6 +88,7 @@
 
 	<modules>
 		<module>sandbox</module>
+		<module>drools</module>
 	</modules>
 
 	<distributionManagement>
